@@ -24,13 +24,17 @@ client.on("message", async message => {
 
     const serverQueue = queue.get(message.guild.id);
     if (message.content.startsWith(`${prefix}stefg`)) {
-        let arr = ['stefan sucks bro 100% fax',
-            'go away stefan', 'nick sucks too' , 'man', 'man man']
+        let arr = ['stefan is coolest dude',
+            'nick is old man', 'thomas, i cannot believe you undid my previous changes' , 'joe']
 
         message.channel.send(arr[Math.floor(arr.length * Math.random())])
     }
     else if(message.content.startsWith(`${prefix}thomas`)) {
-        message.channel.send('man good one i made this')
+        let arr = ['hello world cuz im cool',
+            'i love ballpeen hammers', 'thomas likes to see food diets' , 'thomas is hunger agane', 
+            'brb getting my mcdonalds\' big mac burger tm with extra lettuce, pickles, onyon, bigmac sauce, patty, buns, and a diet coke']
+
+        message.channel.send(arr[Math.floor(arr.length * Math.random())])
     }
     else if (message.content.startsWith(`${prefix}play`)) {
         execute(message, serverQueue);
